@@ -1,0 +1,86 @@
+body{
+    width: 100%;
+    background-color: #191970;
+}
+
+
+.Navbar_Container{
+    display: flex;
+    color: white;
+    width: 100%;
+    
+}
+
+.Navbar_Menu{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+       
+}
+
+
+li{
+    display: flex;
+    padding-right: 40px;
+    gap: 55px;
+    margin-top: 10px;
+    
+}
+
+.User{
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    background-color: blue;
+    padding: 15px;
+    cursor: pointer;    
+}
+
+.User:hover{
+    font-size: larger;
+    background-color: aquamarine;
+}
+
+.Home{
+    display: flex;
+    background-color: blue;
+    border-radius: 25px;
+    padding: 15px;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.Home:hover{
+    font-size: larger;
+    background-color: aquamarine;
+}
+
+.Cart{
+    display: flex;
+    background-color: blue;
+    border-radius: 25px;
+    padding: 15px;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.Cart:hover{
+    font-size:larger;
+    background-color: aquamarine;
+}
+
+
+
+img{
+    width: 180px;
+    height: 90px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+

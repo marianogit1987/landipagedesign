@@ -1,0 +1,54 @@
+.container_Category{
+    display: flex;
+    background-color: white;
+    width: 30vh;
+    height: 400px;
+    margin: 40px;
+    border-radius: 10px;
+    
+    
+    
+        
+}
+
+.Categorias{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-top: 70px;
+    gap: 60px;
+
+}
+    
+    
+
+.Imagen{
+    height: 120px;
+    width: 170px;
+    
+           
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: blue;
+    height: 10%;
+    align-items: center;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    color: white;
+    
+}
+
