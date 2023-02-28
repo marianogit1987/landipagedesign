@@ -3,8 +3,9 @@ import './Navbar.css';
 import { AiFillHome } from 'react-icons/ai';
 import { HiUser } from 'react-icons/hi';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { CgMenu } from 'react-icons/cg';
 import logo from '../assets/img/logo_empresa.png';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import * as userActions from '../Redux/User/user_actions';
 
@@ -32,12 +33,19 @@ const Navbar = () => {
 
   return (
      <div className='Navbar_Container'>
+
+        
+
         <ul className='Navbar_Menu'>
             <img src={logo} alt='logo'></img>
           <li>
-           <AiFillHome className='Home'/>
+            <CgMenu className='MenuHamburg'/>
 
-           <HiUser className='User' 
+            <Link to= '/'>
+              <AiFillHome className='Home'/>
+            </Link>
+
+            <HiUser className='User' 
               onClick={()=>
                 currentUser?
                 dispatch(userActions.toggleMenuHidden())
@@ -45,7 +53,7 @@ const Navbar = () => {
               }
             />
 
-           <AiOutlineShoppingCart className='Cart'/>
+            <AiOutlineShoppingCart className='Cart'/>
           </li>
         </ul>
         

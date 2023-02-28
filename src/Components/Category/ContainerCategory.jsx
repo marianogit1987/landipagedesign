@@ -4,7 +4,7 @@ import './ContainerCategory.css';
 
 
 const ContainerCategory = () => {
-  return <div>Hola</div>
+  return <div></div>
   
 }
 

@@ -5,13 +5,13 @@ import Category from '../Category/Category';
 const Home = () => {
   return (
     <div className='ContainerCategoria'>
+       
         {listacategoria.map((listacategoria) =>
         <Category key={listacategoria.id} 
         {...listacategoria} />
         )} 
+        
     </div>
-    
-    
   )
 };
 

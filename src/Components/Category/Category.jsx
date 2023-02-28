@@ -6,8 +6,11 @@ import './Category.css';
 
 const Category = ({img, title, id}) => {
     return(
+        
         <div className="container_Category">
+            
             <div className="Categorias">
+            
                 <img className="Imagen" src={img}/>
                 <p className="Titulo">
                     <p>{title}</p>
