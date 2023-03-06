@@ -1,6 +1,5 @@
 import { Routes as ReactDomRoutes, Route, } from "react-router-dom";
 import Home from "../Home/Home";
-// import Home from "../Home/Home";
 
 
 import Registro from '../Registro/Registro';

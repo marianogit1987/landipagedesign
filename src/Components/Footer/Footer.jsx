@@ -7,12 +7,12 @@ import {AiFillYoutube} from 'react-icons/ai';
 const Footer = () => {
   return (
     <div className='Footer'>
-        <h4 className='Reservado'>Todos los derechos reservados</h4>
-            <div className='Redes'>
-              <GrInstagram className='Instagram'/>
-              <BsFacebook className='Facebook'/>
-              <AiFillYoutube className='Youtube'/>
-            </div>
+          <h4 className='Reservado'>Todos los derechos reservados</h4>
+          <div className='Redes'>
+            <GrInstagram className='Instagram'/>
+            <BsFacebook className='Facebook'/>
+            <AiFillYoutube className='Youtube'/>
+          </div>
     </div>
   )
 }

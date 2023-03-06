@@ -19,25 +19,12 @@ const Navbar = () => {
 
   const currentUser = useSelector (state => state.user.currentUser);
 
-  // // const onClickRedirect = (route) =>{
-	// // 	if(currentUser){
-	// // 		dispatch(userActions.toggleMenuHidden())
-	// // 	}else{
-	// // 		window.location.href = route
-	// // 	};
 
-  // };
-	
-  
-
-
-  return (
+	return (
      <div className='Navbar_Container'>
-
-        
-
         <ul className='Navbar_Menu'>
             <img src={logo} alt='logo'></img>
+
           <li>
             <CgMenu className='MenuHamburg'/>
 
@@ -58,10 +45,7 @@ const Navbar = () => {
         </ul>
         
       </div>
-      
-
-
-  );
+    );
   
 }
 
