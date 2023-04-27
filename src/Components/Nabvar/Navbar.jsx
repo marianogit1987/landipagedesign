@@ -8,7 +8,7 @@ import logo from '../assets/img/logo_empresa.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import * as userActions from '../Redux/User/user_actions';
-
+import { useState } from 'react';
 
 
 const Navbar = () => {
@@ -19,15 +19,23 @@ const Navbar = () => {
 
   const currentUser = useSelector (state => state.user.currentUser);
 
+  const [isOpen, setIsOpen] = useState(false);
+
+
 
 	return (
      <div className='Navbar_Container'>
         <ul className='Navbar_Menu'>
             <img src={logo} alt='logo'></img>
 
-          <li>
-            <CgMenu className='MenuHamburg'/>
+            <div className= {`nav_toogle ${ isOpen && "open"}`} onClick={ () => setIsOpen(!isOpen)}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          
 
+            <li className={`Menu ${ isOpen && "open"}`} >
             <Link to= '/'>
               <AiFillHome className='Home'/>
             </Link>

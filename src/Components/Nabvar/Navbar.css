@@ -11,15 +11,15 @@ body{
     
 }
 
-
-
 .Navbar_Menu{
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    
-       
+}
+
+.nav_toogle span{
+    display: none;
 }
 
 
@@ -31,9 +31,6 @@ li{
     
 }
 
-.MenuHamburg{
-    display: none;
-}
 
 .User{
     display: flex;
@@ -43,6 +40,7 @@ li{
     padding: 15px;
     cursor: pointer;    
 }
+
 
 .User:hover{
     font-size: larger;
@@ -85,54 +83,95 @@ img{
     cursor: pointer;
 }
 
-@media screen and (max-width: 1000px){ 
+@media screen and (max-width: 680px){ 
     
-    li{
+    body{
+        width: 360px;
+        height: 740px;
         display: flex;
-        padding-right: 40px;
-        gap: 55px;
-        margin-top: 10px;
     }
 
+
     img{
-        width: 120px;
+        width: 130px;
         height: 50px;
         cursor: pointer;
     }
 
-    .MenuHamburg{
+    .Navbar_Menu{
         display: flex;
-        height: 80%;
-        width: 30%;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 360px;
+        height: 70px;
+        background-color: #191970;   
+    }
+
+
+    .Menu{
+        display: none;
+        position: absolute;
+        top: 100px;
+        max-width: 360px;
+        height: 65px;
+        justify-content: center;
+        align-items: center;
+        gap: 75px;
+        flex-direction: row;
+    }
+
+    .Menu.open{
+        display: flex;
+
+    }
+
+
+    .nav_toogle span{
+        width: 30px;
+        height: 4px;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        background: white;
+        display: flex;
+    }
+
+    .container_Category{
+        top: 150px;
+        position: relative;
+        display: flex;
+        margin: 65px;
+        width: 250px;
         
     }
 
-    .User{
-        display: none;
-        flex-direction: row;
-        border-radius: 25px;
-        background-color: blue;
-        padding: 15px;
-        cursor: pointer;
+    .LoginContainer{
+        background-color: #191970;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 80px;
+        position: relative;
     }
 
-    .Cart{
-        display: none;
-        background-color: blue;
-        border-radius: 25px;
-        padding: 15px;
-        flex-direction: row;
-        cursor: pointer;
+    .Footer{
+        position: relative;
+        top: 120px;
+        width: 110%;
+        
     }
 
-    .Home{
-        display: none;
-        background-color: blue;
-        border-radius: 25px;
-        padding: 15px;
-        flex-direction: row;
-        cursor: pointer;
-    }
+
+
+
+
+
+
+
+
+
 
 
 }
